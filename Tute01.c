@@ -2,24 +2,22 @@
 
    Write a C program to input marks of two subjects. Calculate and print the average of the two marks. */
 
-##include <iostream>
-using namespace std;
-
+#include <stdio.h>
 
 int main() {
   int firstsub,secondsub,total,average;
 	
-	cout<<"Enter first subject mark: ";
-	cin>>firstsub;
+	printf("Enter first subject mark: ");
+	scanf("%d",&firstsub);
 	
-	cout<<"Enter second subject mark: ";
-	cin>>secondsub;
+	printf("Enter second subject mark: ");
+	scanf("%d",&secondsub);
 	
 	total=firstsub+secondsub;
 	average=total/2;
 	
-	cout<<"Total is: "<<total<<endl;
-	cout<<"Average is: "<<average<<endl;
+	printf("Total is: %d",total);
+	printf("\nAverage is: %d",average);
   
   return 0;
 }

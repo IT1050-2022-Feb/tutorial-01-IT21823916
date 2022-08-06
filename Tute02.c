@@ -16,24 +16,23 @@ Amount = 20 x 50 = 1000
 Distance -> 50
 Amount = 30 x 50 + (50-30) x 40 = 2300*/
 
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 
-
-int main() {
+int main()
+{
   int distance,total;
 	
-	cout<<"Enter travel Distance: ";
-	cin>>distance;
+	printf("Enter travel Distance: ");
+	scanf("%d",&distance);
 	
 	if(distance<30){
 		total=distance*50;
-		cout<<"Total cost is: "<<total<<endl;
+		printf("Total cost is: %d",total);
 	}
 	else
 	if(distance>30){
 		total=30*50+(distance-30)*40;
-		cout<<"Total cost is: "<<total<<endl;
+		printf("Total cost is: %d",total);
 	}
 	
   return 0;

@@ -11,9 +11,21 @@ sum = 1+2+3+....+ 99+100 = 5050
 n -> 1-
 sum = 1+2+3+...+10 = 55 */
 
-#include <stdio.h>
+#include <iostream>
+using namespace std;
+
 int main() {
-  
+     int n, sum = 0;
+
+    cout << "Enter a positive integer: ";
+    cin >> n;
+
+    for (int i = 1; i <= n; ++i) {
+        sum += i;
+    }
+
+    cout << "Sum = " << sum;
+    
   return 0;
 }
 
